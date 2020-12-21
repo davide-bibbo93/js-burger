@@ -19,10 +19,6 @@ button.addEventListener('click',function() {
   var counterIngredients = 0; // flag
   var arrayIngredients = [];
 
-  if (counterIngredients < 2) {
-    alert('Scegli almeno 2 ingredienti.');
-  }
-
   for (var i = 0; i < listIngredients.length; i++) {
     if (listIngredients[i].checked === true) {
       counterIngredients += 1; // flag aumenta di uno
@@ -32,6 +28,10 @@ button.addEventListener('click',function() {
 
   for (var i = 0; i < arrayIngredients.length; i++) {
     arrayTotal += arrayIngredients[i];
+  }
+
+  if (counterIngredients < 2) {
+    alert('Scegli almeno 2 ingredienti.');
   }
 
   // sezione coupon : creare array con stringhe.
@@ -48,7 +48,6 @@ button.addEventListener('click',function() {
   // il pulsante button calcolerà la somma prezzo degli ingredienti scelti nel footer.
   // anche in caso coupon, del prezzo scontato.
   var sconto;
-  arrayTotal = 0;
 
   if (couponNow !== true) {
     total.innerText = 50 + arrayTotal;
@@ -56,4 +55,5 @@ button.addEventListener('click',function() {
     sconto = ((50 + arrayTotal) * 20) / 100;
     total.innerText = 50 + arrayTotal - sconto;
   }
+  arrayTotal = 0;
 });
