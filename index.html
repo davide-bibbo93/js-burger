@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>js-burger</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- inizio header con nome app e logo -->
+      <header class="clearfix">
+        <div class="fl-left">
+          <h1>Create You Burger</h1>
+        </div>
+        <div class="fl-right">
+          LOGO
+        </div>
+      </header>
+      <!-- fine header -->
+
+      <!-- inizio main con input nome hamburger obbligatorio-->
+      <main>
+        <div class="">
+          <input id="name-hamburger" type="text" name="" value="" placeholder="Name Your Burger.." required>
+        </div>
+        <!-- inizio due liste ingredienti affiancate -->
+        <div class="list">
+          <h3>Ingredients</h3>
+          <ul class="fl-left first-list">
+            <li>
+              img
+              <label for="">Cheese</label>
+              <input type="checkbox" name="" value="">
+            </li>
+            <li>
+              img
+              <label for="">Egg</label>
+              <input type="checkbox" name="" value="">
+            </li>
+            <li>
+              img
+              <label for="">Mustard</label>
+              <input type="checkbox" name="" value="">
+            </li>
+          </ul>
+          <ul class="fl-left second-list">
+            <li>
+              img
+              <label for="">Tomato</label>
+              <input type="checkbox" name="" value="">
+            </li>
+            <li>
+              img
+              <label for="">Lettuce</label>
+              <input type="checkbox" name="" value="">
+            </li>
+            <li>
+              img
+              <label for="">Ketchup</label>
+              <input type="checkbox" name="" value="">
+            </li>
+          </ul>
+        </div>
+        <!-- fine due liste -->
+        <!-- inizio input coupon -->
+        <div class="">
+          <label for="">Discount Coupon</label>
+          <input id="coupon" type="text" name="" value="" placeholder="12354ABCDEF">
+        </div>
+        <!-- fine coupon -->
+        <!-- inzio button calcolo -->
+        <button type="button" name="button">calculate</button>
+        <!-- fine button calcolo -->
+      </main>
+      <!-- fine main -->
+
+      <!-- inzio footer con totale -->
+      <footer class="clearfix">
+        <div class="fl-left">
+          Your Price
+        </div>
+        <div class="fl-right total-cost">
+          50
+        </div>
+      </footer>
+      <!-- fine footer -->
+    </div>
+
+
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>
