@@ -4,6 +4,7 @@ var listIngredients = document.getElementsByClassName('list')[0].getElementsByTa
 var coupon = document.getElementById('coupon');
 var button = document.getElementsByTagName('button')[0];
 var total = document.getElementsByClassName('total-cost')[0];
+var arrayTotal = 0;
 
 
 // tutto quello che viene generato al click sul pulsante.
@@ -17,7 +18,6 @@ button.addEventListener('click',function() {
   // Attribuire value agli ingredienti per somma totale.
   var counterIngredients = 0; // flag
   var arrayIngredients = [];
-  var arrayTotal = 0;
 
   if (counterIngredients < 2) {
     alert('Scegli almeno 2 ingredienti.');
@@ -34,4 +34,26 @@ button.addEventListener('click',function() {
     arrayTotal += arrayIngredients[i];
   }
 
+  // sezione coupon : creare array con stringhe.
+  // se l'utente inserisce una delle stringhe, avrà sconto 20%
+  var couponList = ['GUSTOSO', 'DELIZIOSO', 'ESAGERATO'];
+  var couponNow = false;
+
+  for (var i = 0; i < couponList.length; i++) {
+    if (coupon.value === couponList[i]) {
+      couponNow = true;
+    }
+  }
+
+  // il pulsante button calcolerà la somma prezzo degli ingredienti scelti nel footer.
+  // anche in caso coupon, del prezzo scontato.
+  var sconto;
+  arrayTotal = 0;
+
+  if (couponNow !== true) {
+    total.innerText = 50 + arrayTotal;
+  } else {
+    sconto = ((50 + arrayTotal) * 20) / 100;
+    total.innerText = 50 + arrayTotal - sconto;
+  }
 });
