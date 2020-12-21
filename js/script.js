@@ -3,7 +3,7 @@ var nameHamburger = document.getElementById('name-hamburger');
 var listIngredients = document.getElementsByClassName('list')[0].getElementsByTagName('input');
 var coupon = document.getElementById('coupon');
 var button = document.getElementsByTagName('button')[0];
-var total = document.getElementsByClassName('total-cost')[0];
+var total = document.getElementById('final-price')
 var arrayTotal = 0;
 
 
