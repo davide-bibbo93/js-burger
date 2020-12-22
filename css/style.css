@@ -40,6 +40,10 @@ header,main,footer{
   width: 50%;
   margin: auto;
 }
+
+input:focus,button:focus{
+  outline: none;
+}
 /* fine common settings */
 /* inizio header */
 header{
@@ -121,11 +125,47 @@ main .img-dimension{
 }
 
 main .img-dimension img{
-  height: 100%;
+  width: 100%;
 }
+/* parte custom  */
+
+/* fine custom */
 
 main .input-coupon{
-  margin-top: 150px;
+  margin-top: 90px;
+}
+
+main .input-coupon label{
+  font-size: 20px;
+  padding: 55px 15px 25px 55px;
+}
+
+main .input-coupon input{
+  width: 50%;
+  height: 30px;
+  font-size: 20px;
+  border-radius: 8px;
+  border: none;
+  color: #757575;
+  background-color: #FFF5E2;
+  padding: 10px;
+}
+
+main .butt-container{
+  margin: 50px auto;
+  height: 50px;
+  width: 150px;
+}
+
+main .butt-container button{
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  border: none;
+  background-color: #FDBB40;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
 }
 /* fine main */
 /* inizio footer */
@@ -133,5 +173,11 @@ footer{
   background-color: #D33359;
   height: 100px;
   color: #fff;
+}
+
+footer div{
+  padding: 25px 55px 15px 55px;
+  font-size: 30px;
+  font-weight: bold;
 }
 /* fine footer */
