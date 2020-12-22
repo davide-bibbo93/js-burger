@@ -7,7 +7,7 @@
 
 body{
   font-family: 'Open Sans', sans-serif;
-  background-color: #FFF5E2
+  background-color: #FFF5E2;
 }
 
 .container{
@@ -39,6 +39,10 @@ body{
 header,main,footer{
   width: 50%;
   margin: auto;
+}
+
+main h2 ,main .first-list, main .second-list{
+  padding-left: 55px;
 }
 
 input, button{
@@ -90,7 +94,6 @@ main .input-hamburger input{
 main h2{
   font-size: 25px;
   font-weight: normal;
-  padding-left: 55px;
 }
 
 main ul li{
@@ -108,10 +111,6 @@ main .list{
 
 main .list label{
   color: #D33359;
-}
-
-main .first-list, main .second-list{
-  padding-left: 55px;
 }
 
 main .img-dimension{
@@ -196,7 +195,7 @@ main .input-coupon input{
   font-size: 20px;
   border-radius: 8px;
   border: none;
-  color: #757575;
+  color: #b3b3b3;
   background-color: #FFF5E2;
   padding: 10px;
 }
