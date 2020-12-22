@@ -41,7 +41,7 @@ header,main,footer{
   margin: auto;
 }
 
-input:focus,button:focus{
+input, button{
   outline: none;
 }
 /* fine common settings */
@@ -72,7 +72,7 @@ header img{
 /* inizio main */
 main{
   background-color: #fff;
-  height: calc(100vh - 250px);
+  height: calc(100vh - 25px);
 }
 
 main .input-hamburger{
@@ -102,7 +102,8 @@ main ul li{
 main .list{
   width: 100%;
   height: 200px;
-  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap
 }
 
 main .list label{
@@ -126,13 +127,62 @@ main .img-dimension{
 
 main .img-dimension img{
   width: 100%;
+  vertical-align: middle;
 }
 /* parte custom  */
+.check-v{
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  background-color: #D33359;
+}
 
+/* creare l'indicatore check, nascosto quando non è checkato */
+.check-v::after{
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* mostrare checkmark quando è checkato */
+.ingredient:checked ~ .check-v:after{
+  display: block;
+}
+
+.check-container{
+  display: inline-block;
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 22px;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+/* checkmark style */
+.check-container .check-v:after{
+  left: 0px;
+  color: #000;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  content: '\f00c';
+  bottom: 0px;
+}
+
+.ingredient{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+}
 /* fine custom */
 
 main .input-coupon{
-  margin-top: 90px;
+  margin-top: 100px;
 }
 
 main .input-coupon label{
