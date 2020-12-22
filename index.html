@@ -28,52 +28,90 @@
           <input id="name-hamburger" type="text" name="" value="" placeholder="Name Your Burger.." required>
         </div>
         <!-- inizio due liste ingredienti affiancate -->
-        <div class="list">
-          <h3>Ingredients</h3>
-          <ul class="fl-left first-list">
+        <h2>Ingredients</h2>
+        <div class="list flex">
+          <ul class="first-list">
             <li>
-              img Cheese
-              <input type="checkbox" name="" value="2">
-              <label for="">add</label>
+              <div class="img-dimension">
+                <img src="" alt="">
+              </div>
+              Cheese
+              <label class="check-container">
+                <input class="ingredient" type="checkbox" name="cheese" value="2">
+                <span class="check-v"></span>
+                <label for="cheese">add</label>
+              </label>
             </li>
             <li>
-              img Egg
-              <input type="checkbox" name="" value="3">
-              <label for="">add</label>
+              <div class="img-dimension">
+                <img src="" alt="">
+              </div>
+              Egg
+              <label class="check-container">
+                <input class="ingredient" type="checkbox" name="egg" value="2">
+                <span class="check-v"></span>
+                <label for="egg">add</label>
+              </label>
             </li>
             <li>
-              img Mustard
-              <input type="checkbox" name="" value="4">
-              <label for="">add</label>
+              <div class="img-dimension">
+                <img src="" alt="">
+              </div>
+              Mustard
+              <label class="check-container">
+                <input class="ingredient" type="checkbox" name="mustard" value="2">
+                <span class="check-v"></span>
+                <label for="mustard">add</label>
+              </label>
             </li>
           </ul>
-          <ul class="fl-left second-list">
+          <ul class="second-list">
             <li>
-              img Tomato
-              <input type="checkbox" name="" value="5">
-              <label for="">add</label>
+              <div class="img-dimension">
+                <img src="" alt="">
+              </div>
+              Tomato
+              <label class="check-container">
+                <input class="ingredient" type="checkbox" name="tomato" value="2">
+                <span class="check-v"></span>
+                <label for="tomato">add</label>
+              </label>
             </li>
             <li>
-              img Lettuce
-              <input type="checkbox" name="" value="6">
-              <label for="">add</label>
+              <div class="img-dimension">
+                <img src="" alt="">
+              </div>
+              Lettuce
+              <label class="check-container">
+                <input class="ingredient" type="checkbox" name="lettuce" value="2">
+                <span class="check-v"></span>
+                <label for="lettuce">add</label>
+              </label>
             </li>
             <li>
-              img Ketchup
-              <input type="checkbox" name="" value="7">
-              <label for="">add</label>
+              <div class="img-dimension">
+                <img src="" alt="">
+              </div>
+              Ketchup
+              <label class="check-container">
+                <input class="ingredient" type="checkbox" name="ketchup" value="2">
+                <span class="check-v"></span>
+                <label for="ketchup">add</label>
+              </label>
             </li>
           </ul>
         </div>
         <!-- fine due liste -->
         <!-- inizio input coupon -->
-        <div class="">
+        <div class="input-coupon">
           <label for="">Discount Coupon</label>
-          <input id="coupon" type="text" name="" value="" placeholder="1234567890">
+          <input id="coupon" type="text" name="" value="" placeholder="Inserisci coupon..">
         </div>
         <!-- fine coupon -->
         <!-- inzio button calcolo -->
-        <button type="button" name="button">calculate</button>
+        <div class="butt-container">
+          <button type="button" name="button">calculate</button>
+        </div>
         <!-- fine button calcolo -->
       </main>
       <!-- fine main -->

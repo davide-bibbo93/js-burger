@@ -7,6 +7,7 @@
 
 body{
   font-family: 'Open Sans', sans-serif;
+  background-color: #FFF5E2
 }
 
 .container{
@@ -14,7 +15,6 @@ body{
   height: 100vh;
   margin: 0 auto;
   position: relative;
-  background-color: #FFF5E2
 }
 
 .clearfix{
@@ -31,6 +31,11 @@ body{
   float: right;
 }
 
+.flex {
+  display: flex;
+}
+
+/* fine common settings */
 header,main,footer{
   width: 50%;
   margin: auto;
@@ -39,7 +44,6 @@ header,main,footer{
 li{
   list-style: none;
 }
-/* fine common settings */
 
 header{
   background-color: #FDBB40;

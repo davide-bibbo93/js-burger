@@ -1,17 +1,23 @@
+// var costanti
+var priceStandard = 50;
+var discount = 20;
+// ------------------------------------------------------------------------
+
 // stabilire var richiamando dall'html.
 var nameHamburger = document.getElementById('name-hamburger');
 var listIngredients = document.getElementsByClassName('list')[0].getElementsByTagName('input');
 var coupon = document.getElementById('coupon');
 var button = document.getElementsByTagName('button')[0];
 var total = document.getElementById('final-price')
+var counterIngredients = 0; // flag
 var arrayTotal = 0;
-
+// ------------------------------------------------------------------------
 
 // tutto quello che viene generato al click sul pulsante.
 button.addEventListener('click',function() {
   // nome obbligatorio, se input vuota alert!
   if (nameHamburger.value === '') {
-    alert('Inserire nome hamburger.')
+    alert('Scegli il nome per il burger.')
   }
 
   // l'utente deve selezionare almeno due ingredienti, sennò alert.
@@ -44,16 +50,17 @@ button.addEventListener('click',function() {
       couponNow = true;
     }
   }
+  // --------------------------------------------------------------------
 
   // il pulsante button calcolerà la somma prezzo degli ingredienti scelti nel footer.
   // anche in caso coupon, del prezzo scontato.
   var sconto;
 
   if (couponNow !== true) {
-    total.innerText = 50 + arrayTotal;
+    total.innerText = priceStandard + arrayTotal;
   } else {
-    sconto = ((50 + arrayTotal) * 20) / 100;
-    total.innerText = 50 + arrayTotal - sconto;
+    sconto = ((priceStandard + arrayTotal) * discount) / 100;
+    total.innerText = priceStandard + arrayTotal - sconto;
   }
   arrayTotal = 0;
 });
