@@ -13,7 +13,6 @@ body{
 .container{
   width: 100%;
   height: 100vh;
-  min-width: 1200px;
   margin: 0 auto;
   position: relative;
 }
@@ -152,11 +151,11 @@ main .img-dimension img{
 
 .check-container{
   display: inline-block;
-  position: relative;
   padding-left: 45px;
   margin-bottom: 22px;
   cursor: pointer;
   font-size: 22px;
+  position: relative;
 }
 
 /* checkmark style */
@@ -216,9 +215,41 @@ main .butt-container button{
   font-weight: bold;
   cursor: pointer;
 }
+
+main .shop{
+  width: 250px;
+  height: 150px;
+  border: 2px solid #000;
+  position: fixed;
+  background-color: #fff;
+  top: 65%;
+  right: 25%;
+  overflow: auto;
+  border-radius: 15px;
+  box-shadow: 5px 2px 13px 0px rgba(0,0,0,0);
+}
+
+main .shop ul li{
+  font-size: 15px;
+  margin-top: 2px;
+  margin-left: 10px;
+}
+
+main .shop hr{
+  border-color: #FDBB40;
+}
+
+#refresh{
+  height: 40px;
+  font-size: 12px;
+  padding: 5px;
+  margin: 5px;
+  background-color: #FDBB40;
+}
 /* fine main */
 /* inizio footer */
 footer{
+  justify-content: space-between;
   background-color: #D33359;
   height: 100px;
   color: #fff;
@@ -226,7 +257,18 @@ footer{
 
 footer div{
   padding: 25px 55px 15px 55px;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
+}
+
+#payment{
+  height: 40px;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 15px;
+  background-color: #FDBB40;
+  font-weight: bold;
+  cursor: pointer;
+  visibility: hidden;
 }
 /* fine footer */

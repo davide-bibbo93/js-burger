@@ -1,0 +1,238 @@
+/* common settings */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  background-color: #FFF5E2;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+.clearfix{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.fl-left{
+  float: left;
+}
+
+.fl-right{
+  float: right;
+}
+
+.flex {
+  display: flex;
+}
+
+header,main,footer{
+  width: 50%;
+  margin: auto;
+}
+
+input, button{
+  outline: none;
+}
+/* fine common settings */
+/* inizio header */
+header{
+  background-color: #FDBB40;
+  height: 100px;
+  position: relative;
+}
+
+header h1{
+  padding: 55px 55px 25px 55px;
+}
+
+header .fl-right{
+  position: absolute;
+  top: -10px;
+  right: -70px;
+}
+
+header img{
+  text-align: right;
+  border-radius: 50%;
+  vertical-align: top;
+  height: 200px;
+}
+/* fine header */
+/* inizio main */
+main{
+  background-color: #fff;
+  height: 100vh;
+}
+
+.section-pay {
+  width: 100%;
+  margin: auto;
+  padding: 30px 0px 0px 55px;
+  font-size: 20px;
+  font-weight: bolder;
+  position: relative;
+}
+
+.section-pay span{
+  font-size: 10px;
+}
+
+.section-pay .check{
+  position: absolute;
+  left: 60%;
+  margin: 54px 0;
+  color: green;
+  visibility: hidden;
+}
+
+.section-pay img{
+  height: 30px;
+  vertical-align: middle;
+}
+
+.section-pay input{
+  display: block;
+  width: 300px;
+  height: 40px;
+  font-size: 18px;
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+  margin: 10px 10px;
+  box-shadow: 0px 0px 0px 2px #000;
+  transition: trasform 3s;
+}
+
+.section-pay input:hover{
+  transform: scale(1.2);
+}
+
+.feedback{
+  width: 50%;
+  height: 35%;
+  margin: 18px auto;
+  padding-top : 20px;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+  border: 4px solid #D33359;
+  background-color: #FFF5E2;
+  position: relative;
+  visibility: hidden;
+}
+
+.feedback .fa-hand-o-down:hover{
+  margin-top: 8px;
+  transition: width 2s;
+}
+
+.feedback .fa-hand-o-down:active{
+  width: 100%;
+}
+
+.emoticon {
+  width: 60%;
+  margin: 50px auto;
+  justify-content: space-around;
+  font-weight: bolder;
+  text-align: center;
+  position: relative;
+}
+
+.emoticon i{
+  vertical-align: middle;
+}
+
+.emoticon i:hover{
+  transform: scale(1.6);
+}
+/* parte custom  */
+.check-v{
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  width: 18px;
+  height: 18px;
+}
+
+/* creare l'indicatore check, nascosto quando non è checkato */
+.check-v::after{
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* mostrare checkmark quando è checkato */
+.smile:checked ~ .check-v:after{
+  display: block;
+}
+
+.check-container{
+  display: inline-block;
+  padding-left: 45px;
+  margin-bottom: 22px;
+  cursor: pointer;
+  font-size: 22px;
+  position: relative;
+}
+
+/* checkmark style */
+.check-container .check-v:after{
+  left: 0px;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  content: '\f00c';
+  bottom: 0px;
+}
+
+.smile{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+}
+/* fine custom */
+.words {
+  display: inline-block;
+}
+/* fine main */
+/* inizio footer */
+footer{
+  justify-content: center;
+  background-color: #D33359;
+  height: 100px;
+  color: #fff;
+}
+
+button{
+  height: 80px;
+  font-size: 20px;
+  padding: 5px;
+  margin-top: 10px;
+  background-color: #FDBB40;
+  cursor: pointer;
+  border-radius: 20px;
+  position: relative;
+}
+
+button:hover{
+  transform: scale(1.1);
+}
+
+.fine{
+  display: none;
+}
+/* fine footer */

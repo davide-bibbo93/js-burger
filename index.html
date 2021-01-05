@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="icon" href="img/burger.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap" rel="stylesheet">
@@ -108,20 +109,32 @@
           <input id="coupon" type="text" name="" value="" placeholder="Inserisci coupon..">
         </div>
         <!-- fine coupon -->
-        <!-- inzio button calcolo -->
+        <!-- inzio button calcolo e carrello-->
         <div class="butt-container">
           <button type="button" name="button">calculate</button>
         </div>
-        <!-- fine button calcolo -->
+        <div class="shop">
+          <h2>Carrello:</h2>
+          <ul>
+            <li></li>
+            <li></li>
+          </ul>
+          <hr>
+          <button type="button" name="button" id="refresh"><i class="fa fa-refresh" aria-hidden="true"></i> Refresh</button>
+        </div>
+        <!-- fine button calcolo e carrello-->
       </main>
       <!-- fine main -->
 
       <!-- inzio footer con totale -->
-      <footer class="clearfix">
-        <div class="fl-left">
+      <footer class="flex">
+        <div class="">
           Your Price
         </div>
-        <div class="fl-right">
+        <div class="">
+          <button id="payment" type="button" name="button">Procedere all'ordine</button>
+        </div>
+        <div class="">
           $ <span id="final-price">0</span>
         </div>
       </footer>
