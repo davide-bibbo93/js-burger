@@ -100,6 +100,7 @@ paymentButt.addEventListener('click',function() {
 });
 
 // parte refresh carrello
+
 refreshButt.addEventListener('click',function() {
   ingredients.innerHTML = '<li>' + 'PANE x1' + '</li>';
   ingredients.innerHTML += '<li>' + 'CARNE x1' + '</li>';
